@@ -2,11 +2,17 @@
 <html>
 
 <head>
-    <title>Puzzlio Register</title>
+    <title>Puzzlio Login</title>
     <style>
         body {
             font-family: Arial, sans-serif;
             background-color: #f2f2f2;
+            background-image: linear-gradient(135deg, #FAB2FF 10%, #1904E5 100%);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    font-family: "Open Sans", sans-serif;
+    color: #333333;
         }
 
         form {
@@ -58,24 +64,20 @@
             margin-bottom: 10px;
         }
     </style>
-    <link rel="stylesheet" type="text/css" href="Register.css">
+    <link rel="stylesheet" type="text/css" href="Login.css">
 </head>
 
 <body>
-    <form id="my-form" method="post">
-        <h1>Register Here</h1>
-        <label for="name">Name:</label>
-        <input type="text" id="name" name="name" required>
+    <form id="my-form" action=".././index.html" method="post">
+        <h1>Login Here</h1>
         <label for="email">Email:</label>
         <input type="email" id="email" name="email" required>
         <label for="password">Password:</label>
         <input type="password" id="password" name="password" required>
-        <label for="confirm-password">Confirm Password:</label>
-        <input type="password" id="confirm-password" name="confirm-password" required>
-        <input type="submit" value="Register">
-        <div class="error">Already Have an Account? <a href="../Login/Login.html">Login</a></div>
+        <input type="submit" value="Login">
+        <div class="error">Don't Have an Account? <a href="index.html">Register</a></div>
     </form>
-    <script src="./register.js"></script>
+    <script src="./login.js"></script>
 </body>
 
 </html>
