@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <script src="../Main.js"></script>
+        <title>Puzzlio Quiz</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+        <!-- loading the social media icons from  -->
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <link rel="icon" type="image/x-icon" href="../images/favicon.ico"><!-- favicon -->
+        <link rel="stylesheet" href="../Main.css" >
+        <link rel="stylesheet" href="../Quiz/QuizCSS.css" >
+    </head>
+
+    <body>
+        <nav>
+            <div class="logo">
+                <a href="../index.html">
+                    <img src="../images/favicon.png" alt="Logo Image">
+                </a>
+            </div>
+
+            <ul class="links">
+                <li><a href="../Quiz/Quiz.html">QUIZ</a></li>
+                <li><a href="../Leaderboard/leaderboard.html">LEADERBOARD</a></li>
+                
+                <li><a href="../Testing/testing.html">TEST</a></li>
+                <li> <a href="../About/About.html">ABOUT</a></li>
+            </ul>
+        </nav>
+        <script>SOCIAL() </script>
+
+        <main class="content">
+            <!-- Title of what is being presented on the Page during a given time -->
+            <!-- i.e. List of Quizzes, Title of quiz being played, etc. -->
+            <div id="ContentTitle">Placeholder</div>
+
+            <!--
+                Actual Content to be presented at a given time, i.e.:
+                - List of Available Quizzes
+                - Question / Answers
+                - etc.
+                Which will be dynamically created when reading content from the API upon request.
+            -->
+            <div id="QuizContent">
+
+                <!-- Empty Placeholder Content for initialization when loading content -->
+                <br/>
+                <div id="LoadingIndicator">Loading...</div>
+
+                <div id="PlayerDetails">
+                    <div id="PlayerName"></div>
+                    <div id="PlayerScore"></div>
+                    <div id="RemainingTime"></div>
+                </div>
+
+                <div id="ListOfQuizzes"></div>
+
+                <h3 id="Question"></h3>
+
+                <div id="Answers"></div>
+
+            </div>
+
+            <div id="Buttons"></div>
+
+        </main>
+
+
+
+        <div class="container"></div>
+        <footer>
+            <!-- Footer-->
+            <section class="ft-legal">
+                <ul class="ft-legal-list">
+                    <li><a href="#">Terms &amp; Conditions</a></li>
+                    <li><a href="#">Privacy Policy</a></li>
+                    <li>&copy; 2023 Copyright Inc.</li>
+                </ul>
+            </section>
+        </footer>
+
+
+        <!-- Script for Quiz Mechanics -->
+        <script src="QuizJS.js"></script>
+    </body>
+</html>
