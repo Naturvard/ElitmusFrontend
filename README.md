@@ -25,6 +25,6 @@ Puzzlio is a puzzle game designed to test the soft skills of curiosity, persever
 # Technologies Used
 *	HTML/CSS for the front-end design
 *	JavaScript for interactivity
-*	MySQL for the backend database
+*	MySQL for the backend database<br><br>
 Thank you for playing Puzzlio!
 
